@@ -1,9 +1,39 @@
+:root{
+    --color-bg:rgb(15, 15, 14);
+    --color-titulos:rgb(255, 249, 222);
+    --color-txt:var(--color-titulos);
+    --color-secundario: rgb(233, 209, 103);
+    --color-secundario-light:rgb(212, 194, 113);
+    --color-primario: rgb(19, 19, 18);
+}
+
 /* You can add global styles to this file, and also import other style files */
 *{
     margin:0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
 html, body{
-    height: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-txt);
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+    color: rgb(233, 209, 103);
+    transition: color;
+    transition-duration: 0.35s;
+}
+
+a:hover{
+    color: rgb(19, 19, 18);
+}
+
+/* titulos */
+h1{
+    color: var(--color-titulos);
 }
